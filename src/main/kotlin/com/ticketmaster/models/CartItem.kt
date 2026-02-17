@@ -1,9 +1,4 @@
-package com.ticketmaster.models
-
-data class CartItem(
-    val ticket: Ticket,
-    var quantity: Int
-) {
+data class CartItem(val ticket: String, val quantity: Int) {
     val subtotal: Double
-        get() = ticket.pricePerTicket * quantity
+        get() = ticketPrice * quantity
 }
