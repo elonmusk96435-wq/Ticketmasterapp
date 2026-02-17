@@ -8,7 +8,4 @@ data class Ticket(
     val pricePerTicket: Double,
     val date: String,
     val location: String
-) {
-    val totalPrice: Double
-        get() = quantity * pricePerTicket
-}
+)
